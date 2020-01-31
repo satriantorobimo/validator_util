@@ -276,7 +276,7 @@ final StreamTransformer<String, String> validateKtpUtil =
   } else if (!ktpExp.hasMatch(ktp)) {
     sink.addError('Nomor KTP salah');
   } else if (checkNikYear(ktp) == false) {
-    sink.addError('Umur harus diatas atau sama dengan 17 tahun');
+    sink.addError('Umur harus diatas atau sama dengan 21 tahun');
   } else if (checkNikDateMonth(ktp) == false) {
     sink.addError('Nomor KTP salah');
   } else if (checkNikSequence(ktp) == false) {
